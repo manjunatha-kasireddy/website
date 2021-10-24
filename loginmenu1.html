@@ -1,0 +1,143 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+    <title>Login | Page </title>
+    <link rel="stylesheet" type="text/css" href="main1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+            var show = document.getElementById('Show');
+            if (show.type == 'password') {
+                show.type = 'text';
+            } else {
+                show.type = 'password';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <form>
+                <li><a href="index.html" style="color:black">Home</a></li>
+                <li><a href="ht.html" style="color:black">HTML</a></li>
+                <li><a href="ht1.html" style="color:black">CSS</a></li>
+                <li><a href="ht2.html" style="color:black">JavaScript</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Editors
+                      <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <label>
+                                <a href="edit.html">HTML</a>
+                                <a href="ht1.html">CSS</a>
+                                <a href="ht2.html">JavaScript</a>
+                            </label>
+                        </div>
+                    </div>
+                </li>
+            </form>
+        </ul>
+    </div><br>
+    <center>
+        <div class="login-container">
+            <div id="panel">
+                <center>
+                    <section>
+                        <div class="im">
+                            <h1 class="box" style="align:center;">Log in</h1>
+                            <?php
+                                $connect=mysqli_connect("localhost","root","","phplclasses") or die("Connection Failed");
+                                if(!empty($_POST['save']))                            
+                            ?>
+                                <form method="post">
+                                    <div>
+                                        <span><i  class="fa fa-user"></i></span>
+                                        <input type="text" name="email" required="" placeholder="Email or Username" size="20" maxlength="30" style="padding: 8px;margin: 5px 5px 5px 5px;width: 250px;border-radius: 20px 20px 20px 20px;">
+                                    </div>
+                                    <div>
+                                        <span><i  class="fa fa-lock"></i></span>
+                                        <input type="password" name="pwd" required="" placeholder="Password" id="Show" size="20" maxlength="20" style="padding: 8px;margin: 5px 5px 5px 5px;width: 250px;border-radius: 20px 20px 20px 20px;">
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" onclick="myFunction()"><b style="color:black;font-weight:bold;"><i>Show Password</i></b><br>
+                                    </div>
+                                    <div class="for">
+                                        <a href="forgot2.html " style="color:white;"> Forgot Password ?</a>
+                                    </div>
+                                    <div>
+                                        <button name="save" style="background:linear-gradient(135deg,#FFE259,#FFA751); color: black; font-weight:bold; font-size:20px; border-radius:20px 20px 20px 20px; position: relative; margin:15px 15px 15px 15px; width: 220px; padding:5px; ">Login</button>
+                                </form>
+                                </div>
+                                <p>
+                                    <div class="ba">
+                                        <a href="index.html" style="color:white;">
+                                       Back
+                                    </a>
+                                    </div>
+                                </p>
+                                <h2 style="color:black;">or<br>Login with</h2>
+                                <div class="icons">
+                                    <div class="wrapper">
+                                        <div class="icon google">
+                                            <a href="https://accounts.google.com/signin/v2/identifier?hl=en&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                                                <div class="tooltip ">Google</div>
+                                                <span><i class="fab fa-google "></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="icon facebook ">
+                                            <a href="https://www.facebook.com/login/ ">
+                                                <div class="tooltip ">Facebook</div>
+                                                <span><i class="fab fa-facebook-f "></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper ">
+                                        <div class="icon twitter ">
+                                            <a href="https://twitter.com/login ">
+                                                <div class="tooltip ">Twitter</div>
+                                                <span><i class="fab fa-twitter "></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper ">
+                                        <div class="icon instagram ">
+                                            <a href="https://www.instagram.com/accounts/login/ ">
+                                                <div class="tooltip ">Instagram</div>
+                                                <span><i class="fab fa-instagram "></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </section>
+                </center>
+            </div>
+        </div><br>
+        <div class="id4" style="outline:5px solid gold">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <h2 style="text-align:center;color:white;">wdt3 Tutorials</h2>
+                        <br> <br>
+
+                        <div class="col" style="color:white;font-weight:bold;">
+                            (WDT) Tutorials is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+                            of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2021 by Refsnes Data. All Rights Reserved.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
