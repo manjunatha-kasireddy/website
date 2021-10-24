@@ -1,0 +1,238 @@
+<style>@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=1000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.im {
+    position: relative;
+    max-width: 500px;
+    height: 400px;
+    max padding: 25px;
+    border-radius: 25px 25px 25px 25px;
+    background: rgba(150, 150, 150, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.reset {
+    width: 190px;
+    font-size: 25px;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    background: linear-gradient(-135deg, #fc00ff, #00C9FF, #92FE9D);
+}
+
+.hea {
+    font-family: 'Poppins', sans-serif;
+    align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.ins {
+    color: black;
+font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.for:hover {
+    color: #255784;
+    background: #314755;
+    box-shadow: 0 0 10px #1FA2FF, 0 0 4px #12D8FA, 0 0 80px #A6FFCB;
+    transition-delay: 0.01s;
+}
+
+.for {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+.pass {
+    background: linear-gradient(135deg, #1FA2FF, #A6FFCB, #FFE47A);
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    font-size: 20;
+    width: 210px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: 4px solid gold;
+    overflow: hidden;
+    border: 8px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+    border: 4px;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background: gold;
+}
+
+li a.active {
+    color: white;
+    background-color: lightpink;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: gold;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.id4 {
+    background: linear-gradient(#485563, #29323C);
+    width: 100%;
+    height: 60%
+}
+
+.col {
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100px;
+}
+</style>
